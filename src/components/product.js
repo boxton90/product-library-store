@@ -2,13 +2,22 @@ import React, { Component } from 'react'
 
 class Product extends Component {
 
+    constructor(props){
+        super(props)
+    }
+
     render() {
+        
+        const bgImgContainerStyle = {
+            backgroundImage: `url('${this.props.productData.img}')`
+        }
+        
         return (
             <div>
-                <h1 className="title"><strong>Product title</strong></h1>
-                <div className="bg-img-container random-bg-img"></div>
+                <h1 className="title"><strong>{this.props.productData.title}</strong></h1>
+                <div className="bg-img-container" style={bgImgContainerStyle} alt={this.props.productData.title}></div>
                 <div className="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta placerat felis, id auctor sapien consectetur et. Donec blandit erat non nibh ornare, ac lacinia magna dignissim. Donec vehicula tempor leo.</p>
+                    <p>{this.props.productData.desc}</p>
                     <div className="buttons">
                         <a className="button is-primary is-medium">Buy</a>
                         <a className="button is-primary is-outlined is-medium">Recommendations</a>
