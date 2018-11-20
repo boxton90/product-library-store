@@ -1,18 +1,33 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
+    <div className="columns">
+      <div className="column">
+        <h1 className="title"><strong>Product title</strong></h1>
+        <div className="bg-img-container random-bg-img"></div>
+        <div className="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta placerat felis, id auctor sapien consectetur et. Donec blandit erat non nibh ornare, ac lacinia magna dignissim. Donec vehicula tempor leo.</p>
+          <div className="buttons">
+            <a className="button is-primary is-medium">Buy</a>
+            <a className="button is-primary is-outlined is-medium">Recommendations</a>
+          </div>
+        </div>
+      </div>
+      <div className="column">
+        <h1 className="title"><strong>Product title</strong></h1>
+        <div className="bg-img-container random-bg-img"></div>
+        <div className="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta placerat felis, id auctor sapien consectetur et. Donec blandit erat non nibh ornare, ac lacinia magna dignissim. Donec vehicula tempor leo.</p>
+          <div className="buttons">
+            <a className="button is-primary is-medium">Buy</a>
+            <a className="button is-primary is-outlined is-medium">Recommendations</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
