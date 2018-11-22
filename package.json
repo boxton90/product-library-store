@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Daniel Fernandez Rabal",
   "dependencies": {
+    "awesome-product-library": "^1.0.2",
     "bulma": "^0.7.2",
     "gatsby": "^2.0.19",
     "gatsby-image": "^2.0.15",
